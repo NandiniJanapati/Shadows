@@ -277,6 +277,9 @@ void CharacterCallback(GLFWwindow* lWindow, unsigned int key)
 	case 'Z':						
 		lights[0].position.z -= 0.05;
 		break;
+	case 'r':
+		lights[0].position = { 0.0, 5.0, 1.0 };
+		break;
 	case 'q':
 		glfwSetWindowShouldClose(window, GLFW_TRUE);
 		break;
